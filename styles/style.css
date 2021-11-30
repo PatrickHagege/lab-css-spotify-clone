@@ -10,7 +10,6 @@ White: #FFF
 body    {
     margin:0;
     padding:0;
-    box-sizing:border-box;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -24,7 +23,7 @@ body    {
 }
 
 header  {
-    height:80px;
+    height:90px;
     width:100%;
     position:fixed;
     background-color:white;
@@ -33,12 +32,18 @@ header  {
     align-items:center;
 }
 
+header a img, header nav {
+    margin:0 2em;
+    padding:1em 0;
+}
+
 header nav li {
     display:inline;
 }
 
-header nav li a {
+nav li a {
     text-decoration:none;
+    box-sizing:border-box;
     padding:0 0.8em;
     color:#666;
 }
@@ -83,27 +88,26 @@ color:white;
 }
 
 #whatson > h2 {
-    padding:1em 0;
+    padding:1.5em 0 0.2em;
+    width:11em;
     margin:0 auto;
-    border-bottom:2px solid rgb(0, 180, 50);
+    border-bottom:3px solid rgb(0, 180, 50);
 }
 
 #whatson #advantages    {
     width:100%;
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
+    align-items:center;
 }
 
-#advantages    {
-    gap:2em;
+#advantages {
+    padding:2.5em 0;
+    gap:5em;
 }
 
 .advantage *   {
-    padding:1.5em 0;
-}
-
-.advantage h2   {
-    border-bottom: 2px solid rgb(0, 180, 50);
+    padding:0.25em 0;
 }
 
 .advantage img {
@@ -111,9 +115,12 @@ color:white;
 }
 
 #whatson .advantage    {
-    width:28%;
+    width:20%;
     text-align:center;
-    padding:2em;
+}
+.advantage p    {
+    font-size:1.25em;
+    line-height:1.5em;
 }
 
 #functionalities {
@@ -150,7 +157,7 @@ color:white;
     color:white;
 }
 #functionalities h2 {
-    margin:0 auto;
+    margin:1em auto;
     padding:1em 0;
     border-bottom:2px solid white;
     text-align:center;
