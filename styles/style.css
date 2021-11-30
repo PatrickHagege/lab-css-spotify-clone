@@ -6,3 +6,166 @@ Green: #00B172
 White: #FFF
 
 */
+
+body    {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position:relative;
+}
+
+#landing,
+#whatson    {
+    width:100%;
+}
+
+header  {
+    height:80px;
+    width:100%;
+    position:fixed;
+    background-color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header nav li {
+    display:inline;
+}
+
+header nav li a {
+    text-decoration:none;
+    padding:0 0.8em;
+    color:#666;
+}
+
+#credo {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+#landing header a img {
+    height:60px;
+}
+
+#credo  {
+color:white;
+    background:center url(/images/landing.jpg) no-repeat;
+    background-size:cover;
+    text-align:center;
+}
+
+#credo h1   {
+    font-size:4em;
+    font-weight:20%;
+}
+
+#credo p    {
+    width:60%;
+    margin:0 auto;
+    font-size:1.7em;
+    line-height:1.7em;
+}
+
+.advantage  {
+    width:20%;
+}
+
+#whatson    {
+    text-align:center;
+    padding:1em;
+}
+
+#whatson > h2 {
+    padding:1em 0;
+    margin:0 auto;
+    border-bottom:2px solid rgb(0, 180, 50);
+}
+
+#whatson #advantages    {
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+
+#advantages    {
+    gap:2em;
+}
+
+.advantage *   {
+    padding:1.5em 0;
+}
+
+.advantage h2   {
+    border-bottom: 2px solid rgb(0, 180, 50);
+}
+
+.advantage img {
+    width:100px;
+}
+
+#whatson .advantage    {
+    width:28%;
+    text-align:center;
+    padding:2em;
+}
+
+#functionalities {
+    width:85%;
+    background-color:rgb(0, 180, 50);
+    display:flex;
+    flex-direction:row;
+    color:white;
+    position:relative;
+}
+#functionalities > img  {
+    position:absolute;
+    width:100px;
+    top:calc(50% - 100px/2);
+    left:calc(50% - 100px/2);
+}
+
+#functions  {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1em;
+}
+
+#functions,
+#spotify-app {
+    padding:3em;
+}
+
+#functions a  {
+    text-decoration:none;
+    font-size:1.5em;
+    font-weight:500;
+    color:white;
+}
+#functionalities h2 {
+    margin:0 auto;
+    padding:1em 0;
+    border-bottom:2px solid white;
+    text-align:center;
+}
+
+.function   {
+    width:35%;
+}
+
+#spotify-app    {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#spotify-app img    {
+    width:55%;
+}
